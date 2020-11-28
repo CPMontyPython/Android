@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questions.Question4Fragment">
+
+    <ToggleButton
+        android:id="@+id/toggle2"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:text="ToggleButton"
+        android:textOff="Курю пачку или больше в день"
+        android:textOn="Курю пачку или больше в день"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <ToggleButton
+        android:id="@+id/toggle3"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="ToggleButton"
+        android:textOff="курю пачку или больше в неделю"
+        android:textOn="курю пачку или больше в неделю"
+        app:layout_constraintStart_toEndOf="@+id/toggle2"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="89dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:text="Да / нет"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <ToggleButton
+        android:id="@+id/toggle1"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="ToggleButton"
+        android:textOff="не курю"
+        android:textOn="не курю"
+        app:layout_constraintEnd_toStartOf="@+id/toggle2"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="184dp"
+        android:layout_height="23dp"
+        android:text="Пасивное курение:"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toggle2"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="@+id/toggle2"
+        app:layout_constraintTop_toBottomOf="@+id/toggle2"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Курение"
+        android:textColor="#66B9F9"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

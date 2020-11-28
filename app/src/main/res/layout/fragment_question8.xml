@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".questions.Question8Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Питание"
+        android:textColor="#66B9F9"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <ToggleButton
+        android:id="@+id/toggle33"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="12dp"
+        android:text="ToggleButton"
+        android:textOff="свинина"
+        android:textOn="свинина"
+        app:layout_constraintStart_toEndOf="@+id/toggle32"
+        app:layout_constraintTop_toTopOf="@+id/toggle32" />
+
+    <ToggleButton
+        android:id="@+id/toggle43"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="не употребляю"
+        android:textOn="не употребляю"
+        app:layout_constraintEnd_toEndOf="@+id/toggle33"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toggle33"
+        app:layout_constraintTop_toBottomOf="@+id/toggle33" />
+
+    <ToggleButton
+        android:id="@+id/toggle31"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="12dp"
+        android:text="ToggleButton"
+        android:textOff="курица"
+        android:textOn="курица"
+        app:layout_constraintEnd_toStartOf="@+id/toggle32"
+        app:layout_constraintTop_toTopOf="@+id/toggle32" />
+
+    <ToggleButton
+        android:id="@+id/toggle32"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="12dp"
+        android:text="ToggleButton"
+        android:textOff="говядина"
+        android:textOn="говядина"
+        app:layout_constraintEnd_toEndOf="@+id/textView32"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="60dp"
+        android:text="Употребление мяса:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <ToggleButton
+        android:id="@+id/toggle41"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="несколько раз в неделю"
+        android:textOn="несколько раз в неделю"
+        app:layout_constraintEnd_toEndOf="@+id/toggle31"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toggle31"
+        app:layout_constraintTop_toBottomOf="@+id/toggle31" />
+
+    <ToggleButton
+        android:id="@+id/toggle42"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="несколько раз в месяц"
+        android:textOn="несколько раз в месяц"
+        app:layout_constraintEnd_toEndOf="@+id/toggle32"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toggle32"
+        app:layout_constraintTop_toBottomOf="@+id/toggle32" />
+
+    <ToggleButton
+        android:id="@+id/toggle13"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="ToggleButton"
+        android:textOff="не употребляю"
+        android:textOn="не употребляю"
+        app:layout_constraintStart_toEndOf="@+id/toggle12"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Употребление фруктов / овощей:"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView30"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/toggle12" />
+
+    <ToggleButton
+        android:id="@+id/toggle21"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="несколько раз в неделю"
+        android:textOn="несколько раз в неделю"
+        app:layout_constraintEnd_toStartOf="@+id/toggle22"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <ToggleButton
+        android:id="@+id/toggle22"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:text="ToggleButton"
+        android:textOff="несколько раз в месяц"
+        android:textOn="несколько раз в месяц"
+        app:layout_constraintEnd_toEndOf="@+id/textView31"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <ToggleButton
+        android:id="@+id/toggle12"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:text="ToggleButton"
+        android:textOff="несколько раз в месяц"
+        android:textOn="несколько раз в месяц"
+        app:layout_constraintEnd_toEndOf="@+id/textView30"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <ToggleButton
+        android:id="@+id/toggle11"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="несколько раз в неделю"
+        android:textOn="несколько раз в неделю"
+        app:layout_constraintEnd_toStartOf="@+id/toggle12"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <ToggleButton
+        android:id="@+id/toggle23"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ToggleButton"
+        android:textOff="не употребляю"
+        android:textOn="не употребляю"
+        app:layout_constraintStart_toEndOf="@+id/toggle22"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Употребление молочной продукции:"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

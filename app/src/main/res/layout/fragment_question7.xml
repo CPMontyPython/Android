@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".questions.Question7Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ToggleButton
+        android:id="@+id/toggle13"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="8-10 часов в сутки"
+        android:textOn="8-10 часов в сутки"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <ToggleButton
+        android:id="@+id/toggle21"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="меньше 3-х часов в неделю"
+        android:textOn="меньше 3-х часов в неделю"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <ToggleButton
+        android:id="@+id/toggle23"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="1-2 часа в день"
+        android:textOn="1-2 часа в день"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <ToggleButton
+        android:id="@+id/toggle20"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="Спорт"
+        android:textOn="Спорт"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <ToggleButton
+        android:id="@+id/toggle10"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="Сон"
+        android:textOn="сон"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <ToggleButton
+        android:id="@+id/toggle34"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="каждый день"
+        android:textOn="каждый день"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <ToggleButton
+        android:id="@+id/toggle30"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:textOff="Стрес"
+        android:text="ToggleButton"
+        android:textOn="Стрес"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <ToggleButton
+        android:id="@+id/toggle12"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="6-8 часов в сутки"
+        android:textOn="6-8 часов в сутки"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <ToggleButton
+        android:id="@+id/toggle11"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="меньше 6 часов в сутки"
+        android:textOn="меньше 6 часов в сутки"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <ToggleButton
+        android:id="@+id/toggle33"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="не более 10-ти раза в месяц"
+        android:textOn="не более 10-ти раза в месяц"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <ToggleButton
+        android:id="@+id/toggle24"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="более 2-х часов вдень"
+        android:textOn="более 2-х часов вдень"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <ToggleButton
+        android:id="@+id/toggle32"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="не более 5-ти раза в месяц"
+        android:textOn="не более 5-ти раза в месяц"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <ToggleButton
+        android:id="@+id/toggle22"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="3-6 часов в неделю"
+        android:textOn="3-6 часов в неделю"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <ToggleButton
+        android:id="@+id/toggle31"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="не более 1-го раза в месяц"
+        android:textOn="не более 1-го раза в месяц"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <ToggleButton
+        android:id="@+id/toggle14"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:text="ToggleButton"
+        android:textOff="больше 10 часов в сутки"
+        android:textOn="больше 10 часов в сутки"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
