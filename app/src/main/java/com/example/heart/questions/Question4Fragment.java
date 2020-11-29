@@ -74,6 +74,9 @@ public class Question4Fragment extends Fragment implements fragment_4 {
         final ToggleButton toggle12 = (ToggleButton) rootView.findViewById(R.id.toggle2);
         final ToggleButton toggle13 = (ToggleButton) rootView.findViewById(R.id.toggle3);
         final RadioButton radioButton = (RadioButton) rootView.findViewById(R.id.radioButton);
+        try {
+            ((fragment_4) activity).FragmentSig("1");
+        }catch (ClassCastException ignored) {}
 
         toggle11.setOnCheckedChangeListener( new ToggleButton.OnCheckedChangeListener(){
             @Override

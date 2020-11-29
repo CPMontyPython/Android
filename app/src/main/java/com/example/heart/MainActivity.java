@@ -87,19 +87,8 @@ public class MainActivity extends AppCompatActivity implements lid_dan, fragment
                     String json_risk = "{\r\n    \"Vozrast\": \"" + ageF + "\",\r\n    \"Pol\": \"" + floorF +
                             "\",\r\n    \"Sigareta\": \"" + sigF + "\",\r\n    \"Davlenie\": \"" + davl1F + "\",\r\n    \"Xolesterin\": \"" + xalestF + "\"\r\n}";
 
-                    String json_string1 = "{\r\n    \"Surname\": \"" + surnameF + "\",\r\n    \"Name\": \"" + nameF +
-                            "\",\r\n    \"Patronymic\": \"" + patronymicF + "\",\r\n    \"Patronymic\": \"" + phoneF + "\"\r\n}";
 
-                    String json_string2 = "{\r\n    \"Vozrast\": \"" + ageF + "\",\r\n    \"Pol\": \"" + floorF +
-                            "\",\r\n    \"Rost\": \"" + rostF + "\",\r\n    \"Ves\": \"" + vesF + "\"\r\n}";
-
-
-                    String json_string4 = "{\r\n    \"Vozrast\": \"" + ageF + "\",\r\n    \"Pol\": \"" + floorF +
-                            "\",\r\n    \"Rost\": \"" + rostF + "\",\r\n    \"Ves\": \"" + vesF + "\"\r\n}";
-
-                    String json_string5 = "{\r\n    \"Vozrast\": \"" + ageF + "\",\r\n    \"Pol\": \"" + floorF +
-                            "\",\r\n    \"Rost\": \"" + rostF + "\",\r\n    \"Ves\": \"" + vesF + "\"\r\n}";
-                    Log.i("uuuuuu", json_string2);
+                    Log.i("uuuuuu", json_risk);
 
                     sendMessage();
                 }
@@ -114,14 +103,26 @@ public class MainActivity extends AppCompatActivity implements lid_dan, fragment
     // Переход на новую активность
     public void sendMessage() {
         Intent intent = new Intent(this, MainActivity2.class);
+
         intent.putExtra("vozrast", ageF);
         intent.putExtra("pol", floorF);
         intent.putExtra("sigert", sigF);
         intent.putExtra("davlenie", davl1F);
         intent.putExtra("xolesterin", xalestF);
+
+        intent.putExtra("sport", sportF);
+        intent.putExtra("fizik", fizikF);
+
+        intent.putExtra("alko", alkoF);
+        intent.putExtra("alko2", alko2F);
+
+        intent.putExtra("ed_1", ed_1F);
+        intent.putExtra("ed_2", ed_2F);
+
+        intent.putExtra("ed_3", ed_31F);
+
 //        intent.putExtra("price", price);
         startActivity(intent);
-        finish();
     }
 
 

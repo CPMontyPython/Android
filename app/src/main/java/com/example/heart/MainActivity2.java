@@ -3,8 +3,12 @@ package com.example.heart;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
@@ -14,6 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
     public static final String EXTRA_MESSAGE2 = "";
 
     public String vozrast, pol, davlenie, xolesterin, sig;
+    String sport, fizik, alko, alko2, ed_1, ed_2, ed_3;
     public Integer risk;
 
     @Override
@@ -23,18 +28,108 @@ public class MainActivity2 extends AppCompatActivity {
 
         Bundle arguments = getIntent().getExtras();
         final TextView textView = findViewById(R.id.textView10);
-//        final TextView test = findViewById(R.id.textView7);
+        final TextView textViewColor = findViewById(R.id.textView14);
+
+        final TextView zag1 = findViewById(R.id.zag1);
+        final TextView text1 = findViewById(R.id.text1);
+        final TextView zag2 = findViewById(R.id.zag2);
+        final TextView text2 = findViewById(R.id.text2);
+        final TextView zag3 = findViewById(R.id.zag3);
+        final TextView text3 = findViewById(R.id.text3);
+        final TextView zag4 = findViewById(R.id.zag4);
+        final TextView text4 = findViewById(R.id.text4);
+        final TextView zag5 = findViewById(R.id.zag5);
+        final TextView text5 = findViewById(R.id.text5);
+
+        zag1.setVisibility(View.GONE);
+        zag2.setVisibility(View.GONE);
+        zag3.setVisibility(View.GONE);
+        zag4.setVisibility(View.GONE);
+        zag5.setVisibility(View.GONE);
+
+        text1.setVisibility(View.GONE);
+        text2.setVisibility(View.GONE);
+        text3.setVisibility(View.GONE);
+        text4.setVisibility(View.GONE);
+        text5.setVisibility(View.GONE);
 
         if(arguments!=null) {
+
             vozrast = arguments.get("vozrast").toString();
             pol = arguments.get("pol").toString();
             davlenie = arguments.get("davlenie").toString();
             xolesterin = arguments.get("xolesterin").toString();
             sig = arguments.get("sigert").toString();
+
+            if (sig.equals("2") | sig.equals("3")){
+                zag2.setVisibility(View.VISIBLE);
+                text2.setVisibility(View.VISIBLE);
+            }
+
+            if(arguments.get("sport")!=null) {
+                sport = arguments.get("sport").toString();
+                fizik = arguments.get("fizik").toString();
+
+                if (sport.equals("3") | fizik.equals("3")){
+                    zag5.setVisibility(View.VISIBLE);
+                    text5.setVisibility(View.VISIBLE);
+                }
+            }
+
+            if(arguments.get("alko")!=null) {
+                alko = arguments.get("alko").toString();
+                alko2 = arguments.get("alko2").toString();
+
+                if (alko.equals("1") | alko.equals("2") | alko2.equals("1") | alko2.equals("2")){
+                    zag3.setVisibility(View.VISIBLE);
+                    text3.setVisibility(View.VISIBLE);
+                }
+            }
+
+            if(arguments.get("ed_1")!=null) {
+                ed_1 = arguments.get("ed_1").toString();
+                ed_2 = arguments.get("ed_2").toString();
+                ed_3 = arguments.get("ed_3").toString();
+
+                if (ed_2.equals("3")){
+                    zag4.setVisibility(View.VISIBLE);
+                    text4.setVisibility(View.VISIBLE);
+                }
+                if (ed_3.equals("3")){
+                    zag1.setVisibility(View.VISIBLE);
+                    text1.setVisibility(View.VISIBLE);
+                }
+            }
+
+
+            // отоюражаем нужные реокмендации
+
+
+
             textView.setText(sig);
 //            test.setText(token);
             risk = diseaseRisk();
             textView.setText(risk.toString() + "%");
+            if (risk >= 21){
+                textView.setTextColor(Color.RED);
+                textViewColor.setTextColor(Color.RED);
+                textViewColor.setText("ВЫСОКИЙ");
+            }
+            if (risk >= 15 && risk < 21) {
+                textView.setTextColor(Color.rgb(0xFF, 0xA2, 0x00));
+                textViewColor.setTextColor(Color.rgb(0xFF, 0xA2, 0x00));
+                textViewColor.setText("СРЕДНИЙ");
+            }
+            if (risk >= 9 && risk < 15) {
+                textView.setTextColor(Color.YELLOW);
+                textViewColor.setTextColor(Color.YELLOW);
+                textViewColor.setText("СРЕДНИЙ");
+            }
+            if (risk < 9) {
+                textView.setTextColor(Color.GREEN);
+                textViewColor.setTextColor(Color.GREEN);
+                textViewColor.setText("НИЗКИЙ");
+            }
         }
     }
 

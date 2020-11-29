@@ -40,26 +40,26 @@ public class TabsAccessorAdapter extends FragmentPagerAdapter {
                 Question1Fragment question1Fragment = new Question1Fragment();
                 return question1Fragment;
             case 2:
-                Question3Fragment question3Fragment = new Question3Fragment();
-                return question3Fragment;
-            case 3:
-                Question4Fragment question4Fragment = new Question4Fragment();
-                return question4Fragment;
-            case 4:
-                Question5Fragment question5Fragment = new Question5Fragment();
-                return question5Fragment;
-            case 5:
-                Question6Fragment question6Fragment = new Question6Fragment();
-                return question6Fragment;
-            case 6:
                 Question7Fragment question7Fragment = new Question7Fragment();
                 return question7Fragment;
+            case 3:
+                Question5Fragment question5Fragment = new Question5Fragment();
+                return question5Fragment;
+            case 4:
+                Question6Fragment question6Fragment = new Question6Fragment();
+                return question6Fragment;
+            case 5:
+                Question4Fragment question4Fragment = new Question4Fragment();
+                return question4Fragment;
+            case 6:
+                Question9Fragment question9Fragment = new Question9Fragment();
+                return question9Fragment;
             case 7:
                 Question8Fragment question8Fragment = new Question8Fragment();
                 return question8Fragment;
             case 8:
-                Question9Fragment question9Fragment = new Question9Fragment();
-                return question9Fragment;
+                Question3Fragment question3Fragment = new Question3Fragment();
+                return question3Fragment;
             case 9:
                 LastQuestion lastQuestion = new LastQuestion();
                 return lastQuestion;

@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text="Результат анкетирования"
         android:textSize="25dp"
-        android:textColor="#000"
+        android:textColor="#66B9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
@@ -60,7 +60,7 @@
         android:layout_marginStart="124dp"
         android:text="Рекомендации по снижению рисков"
         android:textSize="25dp"
-        android:textColor="#000"
+        android:textColor="#66B9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"
@@ -81,32 +81,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:layout_constraintVertical_bias="0.034" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="669dp"
-        android:layout_height="69dp"
-        android:text="Отказ от сигарет снижает риск развития сердечно-сосудистых \nзаболеваний более чем в 2 раза."
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.055" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="672dp"
-        android:layout_height="194dp"
-        android:text="Исключите из рациона питания с высоким содержанием \nтранжиров (содержащихся в частично гидрогенизированных \nжирах)."
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.056" />
 
     <Button
         android:id="@+id/button"
@@ -135,4 +109,98 @@
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.931" />
+
+    <ScrollView
+        android:layout_width="670dp"
+        android:layout_height="470dp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <LinearLayout
+            android:layout_width="669dp"
+            android:layout_height="454dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <TextView
+                android:id="@+id/zag1"
+                android:layout_width="669dp"
+                android:layout_height="wrap_content"
+                android:text="Сократите потребление животного жира."
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="672dp"
+                android:layout_height="wrap_content"
+                android:text="Жирная еда животного происхождения (мясные консервы, свинина, жирная птица, все виды субпродуктов, колбасы, копчёности и сало) – богата вредным холестерином, который откладывается в сосудах в виде бляшек. Они могут нарушать кровоток, в том числе и в сосудах, питающих само сердце. \n"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zag2"
+                android:layout_width="669dp"
+                android:layout_height="wrap_content"
+                android:text="Откажитесь от сигарет"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="672dp"
+                android:layout_height="wrap_content"
+                android:text="Отказ от сигарет снижает риск Ишемической болезьни сердца в 2.87 раз.\n"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zag3"
+                android:layout_width="669dp"
+                android:layout_height="wrap_content"
+                android:text="Исключите из употребления алкогольные напитки."
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="672dp"
+                android:layout_height="wrap_content"
+                android:text="Алкоголь увеличивает риск развития болезней системы кровообращения  у мужчин в среднем в 2.18 раз, а у женщин в 5.66 раз.\n"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zag4"
+                android:layout_width="669dp"
+                android:layout_height="wrap_content"
+                android:text="Разнообразьте свой рацион фруктами и овощами."
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="672dp"
+                android:layout_height="wrap_content"
+                android:text="По данным Всемирой организации здравоохранения включение в повседневный рацион фруктов и овощей может сократить риск развития болезней системы кровообращения и некоторых видов рака.\n"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zag5"
+                android:layout_width="669dp"
+                android:layout_height="wrap_content"
+                android:text="Вам нужны регулярные физические нагрузки."
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="672dp"
+                android:layout_height="wrap_content"
+                android:text="Хорошим решением будут пробежки и регулярные выполнения зарядки. Ходьба в быстром темпе в течение получаса в день может снизить риск сердечно-сосудистых заболеваний приблизительно на 20%.\n"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
